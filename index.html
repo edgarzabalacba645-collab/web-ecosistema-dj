@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecosistema DJ PRO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f111a;
+            color: #e2e8f0;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #f97316, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .app-card {
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-orange-500 selection:text-white">
+
+    <!-- GANCHO / HEADER -->
+    <header class="relative px-6 py-16 text-center max-w-4xl mx-auto mt-8">
+        <div class="absolute inset-0 bg-gradient-to-r from-orange-500/10 to-purple-500/10 blur-3xl -z-10 rounded-full"></div>
+        <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-4">
+            ECOSISTEMA <span class="gradient-text">DJ PRO</span>
+        </h1>
+        <p class="text-xl md:text-2xl font-light text-gray-300 mb-8">
+            Tu biblioteca al día y la pista explotada.
+        </p>
+        <div class="bg-gray-800/50 border border-gray-700 p-6 rounded-xl text-left shadow-lg">
+            <p class="text-gray-300 leading-relaxed mb-4">
+                Ser DJ implica dos trabajos: el que hacés en tu casa ordenando música y el que hacés en la cabina haciendo bailar a la gente. Para los dos, creamos una solución automática.
+            </p>
+            <p class="text-orange-400 font-semibold">👇 Descargá menos, mezclá más. Conocé el flujo de trabajo definitivo.</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 space-y-24 mb-24">
+
+        <!-- CARA A: ORGANIZADOR DJ PRO 2 -->
+        <section class="app-card rounded-3xl p-8 md:p-12 shadow-2xl flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2 space-y-6">
+                <div class="inline-block bg-orange-500/20 text-orange-400 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">
+                    Paso 1: La Preparación
+                </div>
+                <h2 class="text-4xl font-bold text-white">Organizador DJ Pro 2</h2>
+                <h3 class="text-xl text-gray-400 font-light">Tu biblioteca musical, impecable y automática.</h3>
+                
+                <ul class="space-y-4 mt-6">
+                    <li class="flex items-start">
+                        <span class="text-2xl mr-3">🧹</span>
+                        <p><strong class="text-white">De "Sucia" a "Limpia":</strong> Ingresá tus descargas y el programa las etiqueta y mueve a su carpeta definitiva.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl mr-3">🤖</span>
+                        <p><strong class="text-white">Identificación Inteligente:</strong> Sugiere artista, título y género por reconocimiento de audio o reglas personalizadas.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl mr-3">👯‍♂️</span>
+                        <p><strong class="text-white">Chau Duplicados:</strong> Detecta versiones repetidas mediante huella acústica para liberar espacio vital.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl mr-3">🗂️</span>
+                        <p><strong class="text-white">Árbol de Carpetas:</strong> Crea tu estructura (Cachengue, Electrónica, etc.) y subestilos automáticamente.</p>
+                    </li>
+                </ul>
+                
+                <div class="mt-8">
+                    <a href="manual_organizador.html" target="_blank" class="inline-flex items-center justify-center bg-gray-800 hover:bg-gray-700 text-orange-400 border border-orange-500/30 px-6 py-3 rounded-xl font-semibold transition-all shadow-lg hover:shadow-orange-500/20 w-full sm:w-auto">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        Ver Manual de Uso Completo
+                    </a>
+                </div>
+            </div>
+            
+            <div class="lg:w-1/2 flex flex-col gap-4">
+                <img src="Captura de pantalla 2026-10-15 223356.png" alt="Dashboard Organizador" onerror="this.onerror=null; this.src='https://placehold.co/800x450/1e293b/a855f7?text=Dashboard+Organizador';" class="rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300">
+                <img src="Captura de pantalla 2026-10-15 223739.png" alt="Arbol de Carpetas" onerror="this.onerror=null; this.src='https://placehold.co/800x450/1e293b/f97316?text=Árbol+de+Carpetas';" class="rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300">
+            </div>
+        </section>
+
+        <!-- CARA B: DECKPILOT -->
+        <section class="app-card rounded-3xl p-8 md:p-12 shadow-2xl flex flex-col lg:flex-row-reverse items-center gap-12">
+            <div class="lg:w-1/2 space-y-6">
+                <div class="inline-block bg-purple-500/20 text-purple-400 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">
+                    Paso 2: La Acción
+                </div>
+                <h2 class="text-4xl font-bold text-white">DeckPilot</h2>
+                <h3 class="text-xl text-gray-400 font-light">Tu copiloto inteligente en la cabina.</h3>
+                
+                <ul class="space-y-4 mt-6">
+                    <li class="flex items-start">
+                        <span class="text-2xl mr-3">🎛️</span>
+                        <p><strong class="text-white">Sincronización en Vivo:</strong> Detecta lo que suena en Serato o Virtual DJ y te ofrece sugerencias al instante.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl mr-3">🎶</span>
+                        <p><strong class="text-white">Mezcla Armónica:</strong> Filtra siguientes pistas por progresión de BPM y Tonalidad (Key).</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl mr-3">⚡</span>
+                        <p><strong class="text-white">Generador de Sesiones:</strong> Elegí género, tiempo y energía (Warm Up, Pro, Leyenda) y te arma la playlist.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-2xl mr-3">👁️</span>
+                        <p><strong class="text-white">Modo Compacto:</strong> Interfaz mínima que no interfiere con tu software de mezcla principal.</p>
+                    </li>
+                </ul>
+
+                <div class="mt-8">
+                    <a href="manual_deckpilot.html" target="_blank" class="inline-flex items-center justify-center bg-gray-800 hover:bg-gray-700 text-purple-400 border border-purple-500/30 px-6 py-3 rounded-xl font-semibold transition-all shadow-lg hover:shadow-purple-500/20 w-full sm:w-auto">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        Ver Manual de Uso Completo
+                    </a>
+                </div>
+            </div>
+            
+            <div class="lg:w-1/2 flex flex-col gap-4">
+                <img src="Captura de pantalla 2026-10-15 231616.png" alt="Modo en Vivo DeckPilot" onerror="this.onerror=null; this.src='https://placehold.co/800x450/1e293b/a855f7?text=Modo+en+Vivo';" class="rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300">
+                <img src="Captura de pantalla 2026-10-15 231647.png" alt="Generador de Sesion DeckPilot" onerror="this.onerror=null; this.src='https://placehold.co/800x450/1e293b/f97316?text=Generador+de+Sesiones';" class="rounded-xl shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- CALL TO ACTION -->
+    <footer class="bg-gray-800 border-t border-gray-700 py-16 text-center px-6">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold mb-4">El flujo de trabajo definitivo para el DJ moderno.</h2>
+            <p class="text-xl text-gray-400 mb-8">Llevá tu profesionalismo al siguiente nivel, desde la descarga hasta la última mezcla de la noche.</p>
+            
+            <div class="bg-gradient-to-r from-orange-600 to-purple-600 p-1 rounded-2xl inline-block shadow-2xl mb-8">
+                <div class="bg-gray-900 px-8 py-6 rounded-xl">
+                    <h3 class="text-2xl font-bold text-white mb-2">🎁 ¡PROBÁ AMBOS GRATIS POR 3 DÍAS!</h3>
+                    <p class="text-gray-300">Instalalos en tu PC y comprobalo vos mismo. <br><span class="text-sm opacity-75">(No requiere tarjeta de crédito).</span></p>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://drive.google.com/file/d/1nLRkBPVpUW5XC-ndFv2TG9YjeUZ_s9Cu/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg transition-colors duration-300 shadow-lg shadow-blue-600/30 w-full sm:w-auto">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    Descargar Instalador
+                </a>
+                <a href="https://wa.me/5491166912047?text=Hola!%20Quiero%20activar%20la%20licencia%20del%20Ecosistema%20DJ%20Pro" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg transition-colors duration-300 shadow-lg shadow-green-500/30 w-full sm:w-auto">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                    Activá tu licencia
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
