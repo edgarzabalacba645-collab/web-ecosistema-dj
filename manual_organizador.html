@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual de Uso - Organizador DJ Pro 2</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f111a; color: #e2e8f0; margin: 0; padding: 20px; line-height: 1.6; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f111a; color: #e2e8f0; margin: 0; padding: 40px 20px; line-height: 1.6; }
         .container { max-width: 900px; margin: 0 auto; }
-        .back-btn { display: inline-block; margin-bottom: 20px; color: #ff6b35; text-decoration: none; font-weight: bold; border: 1px solid #ff6b35; padding: 8px 15px; border-radius: 20px; transition: 0.3s; }
-        .back-btn:hover { background-color: #ff6b35; color: #fff; }
-        h1 { color: #ff6b35; text-align: center; font-size: 2.5rem; margin-bottom: 40px; border-bottom: 2px solid #2d3748; padding-bottom: 20px; }
         
-        .timeline { border-left: 3px solid #ff6b35; padding-left: 30px; margin-left: 20px; }
-        .step { margin-bottom: 50px; position: relative; }
-        .step-dot { position: absolute; left: -47px; top: 5px; width: 30px; height: 30px; background-color: #ff6b35; border-radius: 50%; border: 4px solid #0f111a; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 14px; }
-        .step-title { color: #ff6b35; font-size: 1.4rem; margin: 0 0 10px 0; }
-        .step-box { background-color: #1a202c; padding: 20px; border-radius: 10px; border: 1px solid #2d3748; }
+        .back-btn { display: inline-block; margin-bottom: 30px; color: #ff6b35; text-decoration: none; font-weight: bold; font-size: 1.1rem; padding: 10px 20px; border: 2px solid #ff6b35; border-radius: 30px; transition: 0.3s; }
+        .back-btn:hover { background-color: #ff6b35; color: #0f111a; }
         
-        .image-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px; }
-        .image-grid img { width: 100%; border-radius: 5px; border: 1px solid #4a5568; }
-        .full-img { width: 100%; margin-top: 15px; border-radius: 5px; border: 1px solid #4a5568; }
-        .highlight { color: #cbd5e0; font-weight: bold; }
+        h1 { color: #ff6b35; text-align: center; font-size: 2.8rem; margin-bottom: 50px; border-bottom: 1px solid #2d3748; padding-bottom: 20px; }
+        
+        .timeline { position: relative; max-width: 800px; margin: 0 auto; padding-left: 50px; border-left: 4px solid #ff6b35; }
+        .step { margin-bottom: 60px; position: relative; }
+        .step-dot { position: absolute; left: -47px; top: 0; width: 40px; height: 40px; background-color: #ff6b35; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #0f111a; font-weight: bold; font-size: 1.2rem; border: 4px solid #0f111a; box-sizing: border-box; }
+        
+        .step-content { background-color: #1a1d29; padding: 30px; border-radius: 12px; border: 1px solid #2d3748; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+        .step-title { color: #ff6b35; font-size: 1.8rem; margin-top: 0; margin-bottom: 15px; }
+        .step-text { font-size: 1.1rem; color: #cbd5e0; margin-bottom: 20px; }
+        
+        img { width: 100%; border-radius: 8px; border: 1px solid #333; margin-top: 15px; }
+        .img-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        
+        .highlight { color: #fff; font-weight: bold; background-color: rgba(255, 107, 53, 0.2); padding: 2px 6px; border-radius: 4px; }
     </style>
 </head>
 <body>
@@ -31,41 +35,41 @@
         <div class="timeline">
             <div class="step">
                 <div class="step-dot">1</div>
-                <h3 class="step-title">Ingreso y Licencias</h3>
-                <div class="step-box">
-                    <p><span class="highlight">Prueba Gratis:</span> Si no tenés licencia, tocá "Probar gratis (3 días)" para activar la prueba en tu PC. Al finalizar, la app te pedirá datos para enviarme un WhatsApp automático y coordinar la compra.</p>
-                    <p><span class="highlight">Con Licencia:</span> Ingresá tu usuario y clave y tocá "Ingresar".</p>
+                <div class="step-content">
+                    <h3 class="step-title">Ingreso y Licencias</h3>
+                    <p class="step-text"><span class="highlight">Prueba Gratis:</span> Si no tenés licencia, tocá "Probar gratis (3 días)" para activar la prueba en tu PC. Al finalizar, la app te pedirá datos para enviarme un WhatsApp automático y coordinar la compra.</p>
+                    <p class="step-text"><span class="highlight">Con Licencia:</span> Ingresá tu usuario y clave y tocá "Ingresar".</p>
                 </div>
             </div>
 
             <div class="step">
                 <div class="step-dot">2</div>
-                <h3 class="step-title">Configuración Inicial</h3>
-                <div class="step-box">
-                    <p>Antes de empezar, andá a Configuración y definí dos carpetas clave:</p>
-                    <ul>
+                <div class="step-content">
+                    <h3 class="step-title">Configuración Inicial</h3>
+                    <p class="step-text">Antes de empezar, andá a Configuración y definí dos carpetas clave:</p>
+                    <ul class="step-text">
                         <li><b>Música Sucia:</b> Donde dejás la música nueva sin ordenar.</li>
                         <li><b>Biblioteca Limpia:</b> El destino final donde se guardarán los temas organizados.</li>
                     </ul>
-                    <img src="Captura de pantalla 2026-10-15 223433.png" class="full-img" alt="Configuración Carpetas">
+                    <img src="Captura de pantalla 2026-10-15 223433.png" alt="Configuración Carpetas">
                 </div>
             </div>
 
             <div class="step">
                 <div class="step-dot">3</div>
-                <h3 class="step-title">Escaneo y Clasificación</h3>
-                <div class="step-box">
-                    <p>Tocá "Escanear Música Sucia" para traer los temas nuevos. En la solapa de Música Sucia, podés asignar el Género, Subestilo y Origen de forma manual o usar el botón "Identificar" para sugerencias automáticas.</p>
-                    <img src="Captura de pantalla 2026-10-15 223711.png" class="full-img" alt="Música Sucia">
+                <div class="step-content">
+                    <h3 class="step-title">Escaneo y Clasificación</h3>
+                    <p class="step-text">Tocá "Escanear Música Sucia" para traer los temas nuevos. En la solapa de Música Sucia, podés asignar el Género, Subestilo y Origen de forma manual o usar el botón "Identificar" para sugerencias automáticas.</p>
+                    <img src="Captura de pantalla 2026-10-15 223711.png" alt="Música Sucia">
                 </div>
             </div>
 
             <div class="step">
                 <div class="step-dot">4</div>
-                <h3 class="step-title">Procesamiento y Duplicados</h3>
-                <div class="step-box">
-                    <p>Desde el Dashboard, tocá <b>"Procesar clasificados"</b>. La app calculará los BPMs, generará huellas de audio y prolijará los textos. Luego, pasá a la solapa de Duplicados para revisar qué copias borrar y cuáles conservar.</p>
-                    <div class="image-grid">
+                <div class="step-content">
+                    <h3 class="step-title">Procesamiento y Duplicados</h3>
+                    <p class="step-text">Desde el Dashboard, tocá <b>"Procesar clasificados"</b>. La app calculará los BPMs, generará huellas de audio y prolijará los textos. Luego, pasá a la solapa de Duplicados para revisar qué copias borrar y cuáles conservar.</p>
+                    <div class="img-grid">
                         <img src="Captura de pantalla 2026-10-15 223356.png" alt="Dashboard">
                         <img src="Captura de pantalla 2026-10-15 223720.png" alt="Duplicados">
                     </div>
@@ -74,19 +78,19 @@
 
             <div class="step">
                 <div class="step-dot">5</div>
-                <h3 class="step-title">Mover a la Biblioteca Final</h3>
-                <div class="step-box">
-                    <p>Una vez resueltos los duplicados, tocá <b>"Mover limpios a Biblioteca"</b>. Los archivos se ordenarán automáticamente según tu Árbol de Carpetas físico.</p>
-                    <img src="Captura de pantalla 2026-10-15 223739.png" class="full-img" alt="Árbol Carpetas">
+                <div class="step-content">
+                    <h3 class="step-title">Mover a la Biblioteca Final</h3>
+                    <p class="step-text">Una vez resueltos los duplicados, tocá <b>"Mover limpios a Biblioteca"</b>. Los archivos se ordenarán automáticamente según tu Árbol de Carpetas físico.</p>
+                    <img src="Captura de pantalla 2026-10-15 223739.png" alt="Árbol Carpetas">
                 </div>
             </div>
 
             <div class="step">
                 <div class="step-dot">6</div>
-                <h3 class="step-title">Herramienta Extra: Duplicados en Carpeta</h3>
-                <div class="step-box">
-                    <p>Independiente al resto de la app, podés analizar CUALQUIER carpeta de tu PC para buscar duplicados y limpiar espacio. <i>Cuidado: los archivos borrados desde acá se eliminan del disco.</i></p>
-                    <img src="Captura de pantalla 2026-10-15 223752.png" class="full-img" alt="Duplicados Libres">
+                <div class="step-content">
+                    <h3 class="step-title">Herramienta Extra: Duplicados en Carpeta</h3>
+                    <p class="step-text">Independiente al resto de la app, podés analizar CUALQUIER carpeta de tu PC para buscar duplicados y limpiar espacio. <i>Cuidado: los archivos borrados desde acá se eliminan del disco.</i></p>
+                    <img src="Captura de pantalla 2026-10-15 223752.png" alt="Duplicados Libres">
                 </div>
             </div>
         </div>

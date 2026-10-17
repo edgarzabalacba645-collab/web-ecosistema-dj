@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual de Uso - DeckPilot</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f111a; color: #e2e8f0; margin: 0; padding: 20px; line-height: 1.6; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f111a; color: #e2e8f0; margin: 0; padding: 40px 20px; line-height: 1.6; }
         .container { max-width: 900px; margin: 0 auto; }
-        .back-btn { display: inline-block; margin-bottom: 20px; color: #9f7aea; text-decoration: none; font-weight: bold; border: 1px solid #9f7aea; padding: 8px 15px; border-radius: 20px; transition: 0.3s; }
-        .back-btn:hover { background-color: #9f7aea; color: #fff; }
-        h1 { color: #9f7aea; text-align: center; font-size: 2.5rem; margin-bottom: 40px; border-bottom: 2px solid #2d3748; padding-bottom: 20px; }
         
-        .timeline { border-left: 3px solid #9f7aea; padding-left: 30px; margin-left: 20px; }
-        .step { margin-bottom: 50px; position: relative; }
-        .step-dot { position: absolute; left: -47px; top: 5px; width: 30px; height: 30px; background-color: #9f7aea; border-radius: 50%; border: 4px solid #0f111a; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 14px; }
-        .step-title { color: #9f7aea; font-size: 1.4rem; margin: 0 0 10px 0; }
-        .step-box { background-color: #1a202c; padding: 20px; border-radius: 10px; border: 1px solid #2d3748; }
+        .back-btn { display: inline-block; margin-bottom: 30px; color: #9f7aea; text-decoration: none; font-weight: bold; font-size: 1.1rem; padding: 10px 20px; border: 2px solid #9f7aea; border-radius: 30px; transition: 0.3s; }
+        .back-btn:hover { background-color: #9f7aea; color: #0f111a; }
         
-        .image-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px; }
-        .image-grid img { width: 100%; border-radius: 5px; border: 1px solid #4a5568; }
-        .full-img { width: 100%; margin-top: 15px; border-radius: 5px; border: 1px solid #4a5568; }
-        .highlight { color: #e9d8fd; font-weight: bold; }
+        h1 { color: #9f7aea; text-align: center; font-size: 2.8rem; margin-bottom: 50px; border-bottom: 1px solid #2d3748; padding-bottom: 20px; }
+        
+        .timeline { position: relative; max-width: 800px; margin: 0 auto; padding-left: 50px; border-left: 4px solid #9f7aea; }
+        .step { margin-bottom: 60px; position: relative; }
+        .step-dot { position: absolute; left: -47px; top: 0; width: 40px; height: 40px; background-color: #9f7aea; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #0f111a; font-weight: bold; font-size: 1.2rem; border: 4px solid #0f111a; box-sizing: border-box; }
+        
+        .step-content { background-color: #1a1d29; padding: 30px; border-radius: 12px; border: 1px solid #2d3748; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+        .step-title { color: #9f7aea; font-size: 1.8rem; margin-top: 0; margin-bottom: 15px; }
+        .step-text { font-size: 1.1rem; color: #cbd5e0; margin-bottom: 20px; }
+        
+        img { width: 100%; border-radius: 8px; border: 1px solid #333; margin-top: 15px; }
+        
+        .highlight { color: #fff; font-weight: bold; background-color: rgba(159, 122, 234, 0.2); padding: 2px 6px; border-radius: 4px; }
     </style>
 </head>
 <body>
@@ -31,52 +34,52 @@
         <div class="timeline">
             <div class="step">
                 <div class="step-dot">1</div>
-                <h3 class="step-title">Arranque y Modos de Trabajo</h3>
-                <div class="step-box">
-                    <p>Al igual que el Organizador, podés usar la prueba de 3 días o loguearte con tu licencia.</p>
-                    <p><span class="highlight">Modo En Vivo:</span> Se activa solo si detecta Serato o Virtual DJ abiertos.<br>
+                <div class="step-content">
+                    <h3 class="step-title">Arranque y Modos de Trabajo</h3>
+                    <p class="step-text">Al igual que el Organizador, podés usar la prueba de 3 días o loguearte con tu licencia.</p>
+                    <p class="step-text"><span class="highlight">Modo En Vivo:</span> Se activa solo si detecta Serato o Virtual DJ abiertos.<br>
                     <span class="highlight">Modo Pre-análisis:</span> Analiza tu librería antes de tocar (ideal si no hay software DJ abierto).</p>
-                    <img src="Captura de pantalla 2026-10-15 231601.png" class="full-img" alt="Pre Análisis">
+                    <img src="Captura de pantalla 2026-10-15 231601.png" alt="Pre Análisis">
                 </div>
             </div>
 
             <div class="step">
                 <div class="step-dot">2</div>
-                <h3 class="step-title">Configurar la Acción en Vivo</h3>
-                <div class="step-box">
-                    <p>En el Modo En Vivo, seleccioná tu motor (Serato o Virtual DJ). Luego, configurá tu estrategia:</p>
-                    <ul>
+                <div class="step-content">
+                    <h3 class="step-title">Configurar la Acción en Vivo</h3>
+                    <p class="step-text">En el Modo En Vivo, seleccioná tu motor (Serato o Virtual DJ). Luego, configurá tu estrategia:</p>
+                    <ul class="step-text">
                         <li><b>Progresión BPM y Key:</b> Elegí Ascenso, Estable o Descenso para marcar el rumbo del set.</li>
                         <li><b>Origen:</b> Agrupá sugerencias por Carpeta, Crate o Género.</li>
                     </ul>
-                    <img src="Captura de pantalla 2026-10-15 231616.png" class="full-img" alt="En Vivo">
+                    <img src="Captura de pantalla 2026-10-15 231616.png" alt="En Vivo">
                 </div>
             </div>
 
             <div class="step">
                 <div class="step-dot">3</div>
-                <h3 class="step-title">Sugerencias Inteligentes</h3>
-                <div class="step-box">
-                    <p>Cargá un tema en tu software DJ. DeckPilot lo detectará y te mostrará la sección "Ahora suena" junto a una lista de sugerencias ordenadas de mejor a peor combinación. <i>(En Virtual DJ puede tardar unos 50 seg. en modo automático).</i></p>
-                    <img src="Captura de pantalla 2026-10-15 231739.png" class="full-img" alt="Ahora Suena">
+                <div class="step-content">
+                    <h3 class="step-title">Sugerencias Inteligentes</h3>
+                    <p class="step-text">Cargá un tema en tu software DJ. DeckPilot lo detectará y te mostrará la sección "Ahora suena" junto a una lista de sugerencias ordenadas de mejor a peor combinación. <i>(En Virtual DJ puede tardar unos 50 seg. en modo automático).</i></p>
+                    <img src="Captura de pantalla 2026-10-15 231739.png" alt="Ahora Suena">
                 </div>
             </div>
 
             <div class="step">
                 <div class="step-dot">4</div>
-                <h3 class="step-title">Generador de Sesión Automático</h3>
-                <div class="step-box">
-                    <p>Si querés armar la noche rápido, seleccioná el Género, la Estrategia (Warm Up, Pro, Leyenda) y la Duración. El software generará una playlist completa de forma instantánea para que solo te preocupes por mezclar.</p>
-                    <img src="Captura de pantalla 2026-10-15 231647.png" class="full-img" alt="Generador Sesion">
+                <div class="step-content">
+                    <h3 class="step-title">Generador de Sesión Automático</h3>
+                    <p class="step-text">Si querés armar la noche rápido, seleccioná el Género, la Estrategia (Warm Up, Pro, Leyenda) y la Duración. El software generará una playlist completa de forma instantánea para que solo te preocupes por mezclar.</p>
+                    <img src="Captura de pantalla 2026-10-15 231647.png" alt="Generador Sesion">
                 </div>
             </div>
             
             <div class="step">
                 <div class="step-dot">5</div>
-                <h3 class="step-title">El Reproductor Interno</h3>
-                <div class="step-box">
-                    <p>Incluye un reproductor sencillo para pre-escuchar carpetas o las playlists generadas sin necesidad de abrir Serato. Avanzá, retrocedé y encontrá la vibra exacta.</p>
-                    <img src="Captura de pantalla 2026-10-15 231704.png" class="full-img" alt="Reproductor">
+                <div class="step-content">
+                    <h3 class="step-title">El Reproductor Interno</h3>
+                    <p class="step-text">Incluye un reproductor sencillo para pre-escuchar carpetas o las playlists generadas sin necesidad de abrir Serato. Avanzá, retrocedé y encontrá la vibra exacta.</p>
+                    <img src="Captura de pantalla 2026-10-15 231704.png" alt="Reproductor">
                 </div>
             </div>
         </div>
